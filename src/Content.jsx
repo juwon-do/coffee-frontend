@@ -4,7 +4,7 @@ export function Content() {
   
   const [coffeee,setCoffeee] = useState([]);
   const getCoffee = () => {
-    axios.get('https://api.sampleapis.com/coffee/hot').then(response => {
+    axios.get('http://localhost:3000/coffeees').then(response => {
       console.log(response.data);
       setCoffeee(response.data);
     });
